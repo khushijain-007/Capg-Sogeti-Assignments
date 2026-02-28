@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>12 Column Grid Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #222;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 12px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            background: #a8d82f;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* column spans */
+        .c12 { grid-column: span 12; }
+        .c6  { grid-column: span 6; }
+        .c4  { grid-column: span 4; }
+        .c3  { grid-column: span 3; }
+        .c2  { grid-column: span 2; }
+        .c1  { grid-column: span 1; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Row 1 -->
+    <div class="grid">
+        <div class="box c12">1</div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="grid">
+        <div class="box c6">2</div>
+        <div class="box c6">3</div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="grid">
+        <div class="box c4">4</div>
+        <div class="box c4">5</div>
+        <div class="box c4">6</div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="grid">
+        <div class="box c3">7</div>
+        <div class="box c3">8</div>
+        <div class="box c3">9</div>
+        <div class="box c3">10</div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="grid">
+        <div class="box c2">11</div>
+        <div class="box c2">12</div>
+        <div class="box c2">13</div>
+        <div class="box c2">14</div>
+        <div class="box c2">15</div>
+        <div class="box c2">16</div>
+    </div>
+
+    <!-- Row 6 -->
+    <div class="grid">
+        <div class="box c1">17</div>
+        <div class="box c1">18</div>
+        <div class="box c1">19</div>
+        <div class="box c1">20</div>
+        <div class="box c1">21</div>
+        <div class="box c1">22</div>
+        <div class="box c1">23</div>
+        <div class="box c1">24</div>
+        <div class="box c1">25</div>
+        <div class="box c1">26</div>
+        <div class="box c1">27</div>
+        <div class="box c1">28</div>
+    </div>
+
+</div>
+
+</body>
+</html>

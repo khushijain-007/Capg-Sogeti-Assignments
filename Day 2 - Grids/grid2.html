@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vertical 12 Column Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #222;
+            font-family: Arial, sans-serif;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+            background-color: white;
+            padding: 15px;
+        }
+
+        .box {
+            background-color: #a8d82f;
+            height: 60px;
+            position: relative;
+        }
+
+        /* pink corner number */
+        .box span {
+            position: absolute;
+            top: 4px;
+            left: 6px;
+            font-size: 10px;
+            color: hotpink;
+            font-weight: bold;
+        }
+
+        /* column spans */
+        .col-12 { grid-column: span 12; }
+        .col-6  { grid-column: span 6; }
+        .col-4  { grid-column: span 4; }
+        .col-3  { grid-column: span 3; }
+        .col-2  { grid-column: span 2; }
+        .col-1  { grid-column: span 1; }
+    </style>
+
+</head>
+<body>
+
+<div class="grid">
+
+    <!-- 1 -->
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+    <div class="box col-1"><span>1</span></div>
+
+    <!-- 2 -->
+    <div class="box col-2"><span>2</span></div>
+    <div class="box col-2"><span>2</span></div>
+    <div class="box col-2"><span>2</span></div>
+    <div class="box col-2"><span>2</span></div>
+    <div class="box col-2"><span>2</span></div>
+    <div class="box col-2"><span>2</span></div>
+
+    <!-- 3 -->
+    <div class="box col-3"><span>3</span></div>
+    <div class="box col-3"><span>3</span></div>
+    <div class="box col-3"><span>3</span></div>
+    <div class="box col-3"><span>3</span></div>
+
+    <!-- 4 -->
+    <div class="box col-4"><span>4</span></div>
+    <div class="box col-4"><span>4</span></div>
+    <div class="box col-4"><span>4</span></div>
+
+    <!-- 6 -->
+    <div class="box col-6"><span>6</span></div>
+    <div class="box col-6"><span>6</span></div>
+
+    <!-- 12 -->
+    <div class="box col-12"><span>12</span></div>
+
+</div>
+
+</body>
+</html>
